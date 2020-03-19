@@ -1,0 +1,29 @@
+h1 {
+  border: black dotted 2px;
+  font-size: 100px;
+}
+
+.occupation, .address {
+  font-size: 30px;
+  color: blue;
+  background: black;
+}
+
+h1 {
+  background-color: red;
+  color: black;
+  font-family: monospace;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    background: blue;
+    color: white;
+  }
+}
+
+ul li {
+  font-family: monospace;
+  list-style: square;
+}
+/*# sourceMappingURL=index.css.map */

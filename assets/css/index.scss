@@ -1,0 +1,41 @@
+@import "variable";
+
+%border-red {
+  border: black dotted 2px;
+  font-size: $large-font-size;
+}
+
+%about-font-size {
+  font-size: 30px;
+  color: blue;
+  background: black;
+}
+
+h1 {
+  background-color: $red-background;
+  color: black;
+  @extend %border-red;
+  font-family: monospace;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    background: $blue-background;
+    color: white;
+  }
+}
+
+.occupation {
+  @extend %about-font-size;
+}
+
+.address {
+  @extend %about-font-size;
+}
+
+ul {
+  li {
+    font-family: monospace;
+    list-style: square;
+  }
+}
